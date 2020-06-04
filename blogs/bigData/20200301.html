@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>安装Flink | 白糖的博客</title>
+    <meta name="generator" content="VuePress 1.4.1">
+    <link rel="icon" href="/favicon.ico">
+    <meta name="description" content="日出东方落于西">
+    <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no">
+    <link rel="preload" href="/assets/css/0.styles.a1e95c0c.css" as="style"><link rel="preload" href="/assets/js/app.4cde329c.js" as="script"><link rel="preload" href="/assets/js/3.b1890d86.js" as="script"><link rel="preload" href="/assets/js/1.eb3b7f1d.js" as="script"><link rel="preload" href="/assets/js/12.e37f0daa.js" as="script"><link rel="prefetch" href="/assets/js/10.ad23edf7.js"><link rel="prefetch" href="/assets/js/11.2a751a6b.js"><link rel="prefetch" href="/assets/js/13.e9ef60a9.js"><link rel="prefetch" href="/assets/js/14.2e647386.js"><link rel="prefetch" href="/assets/js/15.b24e0b00.js"><link rel="prefetch" href="/assets/js/16.afa51a0b.js"><link rel="prefetch" href="/assets/js/17.56828cf2.js"><link rel="prefetch" href="/assets/js/18.190c510f.js"><link rel="prefetch" href="/assets/js/19.3a2cb96c.js"><link rel="prefetch" href="/assets/js/20.946563ce.js"><link rel="prefetch" href="/assets/js/21.f6b55f2b.js"><link rel="prefetch" href="/assets/js/22.8ea7e673.js"><link rel="prefetch" href="/assets/js/23.5bcf67b8.js"><link rel="prefetch" href="/assets/js/24.f8b96f16.js"><link rel="prefetch" href="/assets/js/25.dab4e91d.js"><link rel="prefetch" href="/assets/js/26.f8ef1632.js"><link rel="prefetch" href="/assets/js/27.8c3a743a.js"><link rel="prefetch" href="/assets/js/4.aa977ea1.js"><link rel="prefetch" href="/assets/js/5.137e3142.js"><link rel="prefetch" href="/assets/js/6.ca89540a.js"><link rel="prefetch" href="/assets/js/7.f6dd72f1.js"><link rel="prefetch" href="/assets/js/8.a1cf447d.js"><link rel="prefetch" href="/assets/js/9.80093a2b.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.a1e95c0c.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container" data-v-19557b78><div data-v-19557b78><div id="loader-wrapper" class="loading-wrapper" data-v-d48f4d20 data-v-19557b78 data-v-19557b78><div class="loader-main" data-v-d48f4d20><div data-v-d48f4d20></div><div data-v-d48f4d20></div><div data-v-d48f4d20></div><div data-v-d48f4d20></div></div> <!----> <!----></div> <div class="password-shadow password-wrapper-out" style="display:none;" data-v-64685f0e data-v-19557b78 data-v-19557b78><h3 class="title" style="display:none;" data-v-64685f0e data-v-64685f0e>白糖的博客</h3> <!----> <label id="box" class="inputBox" style="display:none;" data-v-64685f0e data-v-64685f0e><input type="password" value="" data-v-64685f0e> <span data-v-64685f0e>Konck! Knock!</span> <button data-v-64685f0e>OK</button></label> <div class="footer" style="display:none;" data-v-64685f0e data-v-64685f0e><span data-v-64685f0e><i class="iconfont reco-theme" data-v-64685f0e></i> <a target="blank" href="https://vuepress-theme-reco.recoluan.com" data-v-64685f0e>vuePress-theme-reco</a></span> <span data-v-64685f0e><i class="iconfont reco-copyright" data-v-64685f0e></i> <a data-v-64685f0e><span data-v-64685f0e>白糖</span>
+            
+          <span data-v-64685f0e>2019 - </span>
+          2020
+        </a></span></div></div> <div class="hide" data-v-19557b78><header class="navbar" data-v-19557b78><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><img src="/logo.png" alt="白糖的博客" class="logo"> <span class="site-name">白糖的博客</span></a> <div class="links"><div class="color-picker"><a class="color-button"><i class="iconfont reco-color"></i></a> <div class="color-picker-menu" style="display:none;"><div class="mode-options"><h4 class="title">Choose mode</h4> <ul class="color-mode-options"><li class="dark">dark</li><li class="auto active">auto</li><li class="light">light</li></ul></div></div></div> <div class="search-box"><i class="iconfont reco-search"></i> <input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/" class="nav-link"><i class="iconfont reco-home"></i>
+  Home
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title"><i class="iconfont reco-category"></i>
+      Category
+    </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/categories/backEnd/" class="nav-link"><i class="iconfont undefined"></i>
+  backEnd
+</a></li><li class="dropdown-item"><!----> <a href="/categories/bigData/" class="nav-link"><i class="iconfont undefined"></i>
+  bigData
+</a></li><li class="dropdown-item"><!----> <a href="/categories/devops/" class="nav-link"><i class="iconfont undefined"></i>
+  devops
+</a></li><li class="dropdown-item"><!----> <a href="/categories/frontEnd/" class="nav-link"><i class="iconfont undefined"></i>
+  frontEnd
+</a></li></ul></div></div><div class="nav-item"><a href="/tag/" class="nav-link"><i class="iconfont reco-tag"></i>
+  Tag
+</a></div><div class="nav-item"><a href="/timeline/" class="nav-link"><i class="iconfont reco-date"></i>
+  TimeLine
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title"><i class="iconfont reco-message"></i>
+      Docs
+    </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/docs/theme-reco/" class="nav-link"><i class="iconfont undefined"></i>
+  vuepress-reco
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title"><i class="iconfont reco-message"></i>
+      Contact
+    </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="https://github.com/aaronTang98" target="_blank" rel="noopener noreferrer" class="nav-link external"><i class="iconfont reco-github"></i>
+  GitHub
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></li><li class="dropdown-item"><!----> <a href="https://www.jianshu.com/u/29c46d266cd3" target="_blank" rel="noopener noreferrer" class="nav-link external"><i class="iconfont reco-jianshu"></i>
+  jianshu
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></li><li class="dropdown-item"><!----> <a href="https://aarontang98.github.io" target="_blank" rel="noopener noreferrer" class="nav-link external"><i class="iconfont reco-blog"></i>
+  github page
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></li></ul></div></div> <!----></nav></div></header> <div class="sidebar-mask" data-v-19557b78></div> <aside class="sidebar" data-v-19557b78><div class="personal-info-wrapper" data-v-042e23d4><img src="/avatar.png" alt="author-avatar" class="personal-img" data-v-042e23d4> <h3 class="name" data-v-042e23d4>
+    白糖
+  </h3> <div class="num" data-v-042e23d4><div data-v-042e23d4><h3 data-v-042e23d4>11</h3> <h6 data-v-042e23d4>Article</h6></div> <div data-v-042e23d4><h3 data-v-042e23d4>9</h3> <h6 data-v-042e23d4>Tag</h6></div></div> <hr data-v-042e23d4></div> <nav class="nav-links"><div class="nav-item"><a href="/" class="nav-link"><i class="iconfont reco-home"></i>
+  Home
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title"><i class="iconfont reco-category"></i>
+      Category
+    </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/categories/backEnd/" class="nav-link"><i class="iconfont undefined"></i>
+  backEnd
+</a></li><li class="dropdown-item"><!----> <a href="/categories/bigData/" class="nav-link"><i class="iconfont undefined"></i>
+  bigData
+</a></li><li class="dropdown-item"><!----> <a href="/categories/devops/" class="nav-link"><i class="iconfont undefined"></i>
+  devops
+</a></li><li class="dropdown-item"><!----> <a href="/categories/frontEnd/" class="nav-link"><i class="iconfont undefined"></i>
+  frontEnd
+</a></li></ul></div></div><div class="nav-item"><a href="/tag/" class="nav-link"><i class="iconfont reco-tag"></i>
+  Tag
+</a></div><div class="nav-item"><a href="/timeline/" class="nav-link"><i class="iconfont reco-date"></i>
+  TimeLine
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title"><i class="iconfont reco-message"></i>
+      Docs
+    </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/docs/theme-reco/" class="nav-link"><i class="iconfont undefined"></i>
+  vuepress-reco
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title"><i class="iconfont reco-message"></i>
+      Contact
+    </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="https://github.com/aaronTang98" target="_blank" rel="noopener noreferrer" class="nav-link external"><i class="iconfont reco-github"></i>
+  GitHub
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></li><li class="dropdown-item"><!----> <a href="https://www.jianshu.com/u/29c46d266cd3" target="_blank" rel="noopener noreferrer" class="nav-link external"><i class="iconfont reco-jianshu"></i>
+  jianshu
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></li><li class="dropdown-item"><!----> <a href="https://aarontang98.github.io" target="_blank" rel="noopener noreferrer" class="nav-link external"><i class="iconfont reco-blog"></i>
+  github page
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></li></ul></div></div> <!----></nav>  <ul class="sidebar-links"><li><section class="sidebar-group depth-0"><p class="sidebar-heading open"><span>安装Flink</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/blogs/bigData/20200301.html#准备工作" class="sidebar-link">准备工作</a><ul class="sidebar-sub-headers"></ul></li><li><a href="/blogs/bigData/20200301.html#安装-flink" class="sidebar-link">安装 Flink</a><ul class="sidebar-sub-headers"></ul></li><li><a href="/blogs/bigData/20200301.html#启动-flink" class="sidebar-link">启动 flink</a><ul class="sidebar-sub-headers"></ul></li><li><a href="/blogs/bigData/20200301.html#demo" class="sidebar-link">demo</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/blogs/bigData/20200301.html#_1、-新建一个maven-项目" class="sidebar-link">1、 新建一个maven 项目</a></li><li class="sidebar-sub-header"><a href="/blogs/bigData/20200301.html#创建一个-sockettextstreamwordcount-文件，加入以下代码：" class="sidebar-link">创建一个 SocketTextStreamWordCount 文件，加入以下代码：</a></li></ul></li></ul></section></li></ul> </aside> <div class="password-shadow password-wrapper-in" style="display:none;" data-v-64685f0e data-v-19557b78><h3 class="title" style="display:none;" data-v-64685f0e data-v-64685f0e>安装Flink</h3> <!----> <label id="box" class="inputBox" style="display:none;" data-v-64685f0e data-v-64685f0e><input type="password" value="" data-v-64685f0e> <span data-v-64685f0e>Konck! Knock!</span> <button data-v-64685f0e>OK</button></label> <div class="footer" style="display:none;" data-v-64685f0e data-v-64685f0e><span data-v-64685f0e><i class="iconfont reco-theme" data-v-64685f0e></i> <a target="blank" href="https://vuepress-theme-reco.recoluan.com" data-v-64685f0e>vuePress-theme-reco</a></span> <span data-v-64685f0e><i class="iconfont reco-copyright" data-v-64685f0e></i> <a data-v-64685f0e><span data-v-64685f0e>白糖</span>
+            
+          <span data-v-64685f0e>2019 - </span>
+          2020
+        </a></span></div></div> <div data-v-19557b78><main class="page"><div class="page-title" style="display:none;"><h1>安装Flink</h1> <hr> <div data-v-34ea29db><i class="iconfont reco-account" data-v-34ea29db><span data-v-34ea29db>白糖</span></i> <i class="iconfont reco-date" data-v-34ea29db><span data-v-34ea29db>NaN-0NaN-0NaN</span></i> <!----> <i class="iconfont reco-tag tags" data-v-34ea29db><span class="tag-item" data-v-34ea29db>flink</span></i></div></div> <div class="theme-reco-content content__default" style="display:none;"><h2 id="准备工作"><a href="#准备工作" class="header-anchor">#</a> 准备工作</h2> <p>安装查看 Java 的版本号，推荐使用 Java 8。</p> <h2 id="安装-flink"><a href="#安装-flink" class="header-anchor">#</a> 安装 Flink</h2> <ul><li>在 Mac OS X 上安装 Flink 是非常方便的。推荐通过 homebrew 来安装。</li></ul> <div class="language- line-numbers-mode"><pre class="language-text"><code>
+➜ ~ brew install apache-flink
+
+==&gt; Downloading https://archive.apache.org/dist/flink/flink-1.9.1/flink-1.9.1-bi
+
+######################################################################## 100.0%
+
+🍺 /usr/local/Cellar/apache-flink/1.9.1: 166 files, 277MB, built in 1 minute 40 seconds
+
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br></div></div><ul><li>检查安装：</li></ul> <div class="language- line-numbers-mode"><pre class="language-text"><code>
+➜ ~ flink --version
+
+Version: 1.9.1, Commit ID: 4d56de8
+
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br></div></div><h2 id="启动-flink"><a href="#启动-flink" class="header-anchor">#</a> 启动 flink</h2> <div class="language- line-numbers-mode"><pre class="language-text"><code>
+➜ ~ cd /usr/local/Cellar/apache-flink/1.9.1/libexec/bin
+
+➜ bin ls
+
+config.sh mesos-appmaster.sh start-zookeeper-quorum.sh
+
+find-flink-home.sh mesos-taskmanager.sh stop-cluster.sh
+
+flink pyflink-gateway-server.sh stop-zookeeper-quorum.sh
+
+flink-console.sh pyflink-shell.sh taskmanager.sh
+
+flink-daemon.sh sql-client.sh yarn-session.sh
+
+historyserver.sh standalone-job.sh zookeeper.sh
+
+jobmanager.sh start-cluster.sh
+
+mesos-appmaster-job.sh start-scala-shell.sh
+
+➜ bin ./start-cluster.sh
+
+Starting cluster.
+
+Starting standalonesession daemon on host 192.168.3.102.
+
+Starting taskexecutor daemon on host 192.168.3.102.
+
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br><span class="line-number">26</span><br><span class="line-number">27</span><br><span class="line-number">28</span><br><span class="line-number">29</span><br></div></div><p>接着就可以进入 web 页面(http://localhost:8081/) 查看</p> <p><img src="https://cdn.jsdelivr.net/gh/aaronTang98/image_store/blog/flink01-1202136.png" alt="flink01"></p> <h2 id="demo"><a href="#demo" class="header-anchor">#</a> demo</h2> <h3 id="_1、-新建一个maven-项目"><a href="#_1、-新建一个maven-项目" class="header-anchor">#</a> 1、 新建一个maven 项目</h3> <p>创建工程：</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>
+ $ mvn archetype:generate 
+
+​      -DarchetypeGroupId=org.apache.flink 
+
+​      -DarchetypeArtifactId=flink-quickstart-java 
+
+​      -DarchetypeVersion=1.9.0
+
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br></div></div><p>或者在idea里面添加archetype</p> <p><img src="https://cdn.jsdelivr.net/gh/aaronTang98/image_store/blog/flink02-1202165.png" alt="flink02"></p> <p><img src="https://cdn.jsdelivr.net/gh/aaronTang98/image_store/blog/flink03-1202186.png" alt="flink03"></p> <h3 id="创建一个-sockettextstreamwordcount-文件，加入以下代码："><a href="#创建一个-sockettextstreamwordcount-文件，加入以下代码：" class="header-anchor">#</a> 创建一个 SocketTextStreamWordCount 文件，加入以下代码：</h3> <div class="language- line-numbers-mode"><pre class="language-text"><code>
+package org.leileitang;
+
+
+
+import org.apache.flink.api.common.functions.FlatMapFunction;
+
+import org.apache.flink.api.java.tuple.Tuple2;
+
+import org.apache.flink.streaming.api.datastream.DataStreamSource;
+
+import org.apache.flink.streaming.api.datastream.SingleOutputStreamOperator;
+
+import org.apache.flink.streaming.api.environment.StreamExecutionEnvironment;
+
+import org.apache.flink.util.Collector;
+
+public class SocketTextStreamWordCount {
+
+​    public static void main(String[] args) {
+
+​        if (args.length != 2) {
+
+​            System.err.println(&quot;USAGE:nSocketTextStreamWordCount &lt;hostname&gt; &lt;port&gt;&quot;);
+
+​            return;
+
+​        }
+
+​        String hostname = args[0];
+
+​        Integer port = Integer.parseInt(args[1]);
+
+
+
+​        // set up the streaming execution environment
+
+​        final StreamExecutionEnvironment env = StreamExecutionEnvironment.getExecutionEnvironment();
+
+
+
+​        //获取数据
+
+​        DataStreamSource&lt;String&gt; stream = env.socketTextStream(hostname, port);
+
+
+
+​        //计数
+
+​        SingleOutputStreamOperator&lt;Tuple2&lt;String, Integer&gt;&gt; sum = stream.flatMap(new LineSplitter())
+
+​                .keyBy(0)
+
+​                .sum(1);
+
+​        sum.print();
+
+
+
+​    }
+
+
+
+​    public static final class LineSplitter implements FlatMapFunction&lt;String, Tuple2&lt;String, Integer&gt;&gt; {
+
+​        @Override
+
+​        public void flatMap(String s, Collector&lt;Tuple2&lt;String, Integer&gt;&gt; collector) {
+
+​            String[] tokens = s.toLowerCase().split(&quot;W+&quot;);
+
+​            for (String token : tokens) {
+
+​                if (token.length() &gt; 0) {
+
+​                    collector.collect(new Tuple2&lt;String, Integer&gt;(token, 1));
+
+​                }
+
+​            }
+
+
+
+​        }
+
+​    }
+
+}
+
+
+
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br><span class="line-number">26</span><br><span class="line-number">27</span><br><span class="line-number">28</span><br><span class="line-number">29</span><br><span class="line-number">30</span><br><span class="line-number">31</span><br><span class="line-number">32</span><br><span class="line-number">33</span><br><span class="line-number">34</span><br><span class="line-number">35</span><br><span class="line-number">36</span><br><span class="line-number">37</span><br><span class="line-number">38</span><br><span class="line-number">39</span><br><span class="line-number">40</span><br><span class="line-number">41</span><br><span class="line-number">42</span><br><span class="line-number">43</span><br><span class="line-number">44</span><br><span class="line-number">45</span><br><span class="line-number">46</span><br><span class="line-number">47</span><br><span class="line-number">48</span><br><span class="line-number">49</span><br><span class="line-number">50</span><br><span class="line-number">51</span><br><span class="line-number">52</span><br><span class="line-number">53</span><br><span class="line-number">54</span><br><span class="line-number">55</span><br><span class="line-number">56</span><br><span class="line-number">57</span><br><span class="line-number">58</span><br><span class="line-number">59</span><br><span class="line-number">60</span><br><span class="line-number">61</span><br><span class="line-number">62</span><br><span class="line-number">63</span><br><span class="line-number">64</span><br><span class="line-number">65</span><br><span class="line-number">66</span><br><span class="line-number">67</span><br><span class="line-number">68</span><br><span class="line-number">69</span><br><span class="line-number">70</span><br><span class="line-number">71</span><br><span class="line-number">72</span><br><span class="line-number">73</span><br><span class="line-number">74</span><br><span class="line-number">75</span><br><span class="line-number">76</span><br><span class="line-number">77</span><br><span class="line-number">78</span><br><span class="line-number">79</span><br><span class="line-number">80</span><br><span class="line-number">81</span><br><span class="line-number">82</span><br><span class="line-number">83</span><br><span class="line-number">84</span><br><span class="line-number">85</span><br><span class="line-number">86</span><br><span class="line-number">87</span><br><span class="line-number">88</span><br><span class="line-number">89</span><br><span class="line-number">90</span><br><span class="line-number">91</span><br></div></div><p>接着进入工程目录，使用以下命令打包。</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>
+mvn clean package -Dmaven.test.skip=true
+
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br></div></div><p><img src="https://cdn.jsdelivr.net/gh/aaronTang98/image_store/blog/flink04-1202202.png" alt="flink04"></p> <p>然后我们开启监听 9000 端口:</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>nc -l 9000  
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><p>最后进入 flink 安装目录 bin 下执行以下命令跑程序：</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>
+cd /usr/local/Cellar/apache-flink/1.9.1/libexec/bin
+
+flink run -c org.leileitang.flink.SocketTextStreamWordCount /Users/tanglei/workspace/flink/target/flink-demo-1.0-SNAPSHOT.jar 127.0.0.1 9000
+
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br></div></div><p><img src="https://cdn.jsdelivr.net/gh/aaronTang98/image_store/blog/flink05-1202218.png" alt="flink05"></p> <p>执行完上述命令后，我们可以在 webUI 中看到正在运行的程序：</p> <p>![flink06](/Users/tanglei/Library/Mobile Documents/com~apple~CloudDocs/leileitangcom/背景图/flink06-1202233.png)</p> <p>我们可以在 nc 监听端口中输入 text，比如：</p> <p><img src="https://cdn.jsdelivr.net/gh/aaronTang98/image_store/blog/flink07-1202243.png" alt="flink07"></p> <p>然后我们通过 tail 命令看一下输出的 log 文件，来观察统计结果。进入目录 apache-flink/1.9.0/libexec/log，执行以下命令:</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>
+cd /usr/local/Cellar/apache-flink/1.9.1/libexec/log
+![flink08](/images/flink08.png)
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br></div></div><p><img src="https://cdn.jsdelivr.net/gh/aaronTang98/image_store/blog/flink08-1202262.png" alt="flink08"></p> <h4 id="总结"><a href="#总结" class="header-anchor">#</a> 总结</h4> <p>本文描述了如何在 Mac 电脑上安装 Flink，及运行它。接着通过一个简单的 Flink 程序来介绍如何构建及运行Flink 程序。</p></div> <footer class="page-edit" style="display:none;"><!----> <div class="last-updated"><span class="prefix">Last Updated: </span> <span class="time">6/4/2020, 1:17:28 AM</span></div></footer> <!----> <!----></main> <!----></div></div></div></div><div class="global-ui"><div class="back-to-ceiling" style="right:1rem;bottom:6rem;width:2.5rem;height:2.5rem;border-radius:.25rem;line-height:2.5rem;display:none;" data-v-44bd5a18 data-v-44bd5a18><svg t="1574745035067" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="5404" class="icon" data-v-44bd5a18><path d="M526.60727968 10.90185116a27.675 27.675 0 0 0-29.21455937 0c-131.36607665 82.28402758-218.69155461 228.01873535-218.69155402 394.07834331a462.20625001 462.20625001 0 0 0 5.36959153 69.94390903c1.00431239 6.55289093-0.34802892 13.13561351-3.76865779 18.80351572-32.63518765 54.11355614-51.75690182 118.55860487-51.7569018 187.94566865a371.06718723 371.06718723 0 0 0 11.50484808 91.98906777c6.53300375 25.50556257 41.68394495 28.14064038 52.69160883 4.22606766 17.37162448-37.73630017 42.14135425-72.50938081 72.80769204-103.21549295 2.18761121 3.04276886 4.15646224 6.24463696 6.40373557 9.22774369a1871.4375 1871.4375 0 0 0 140.04691725 5.34970492 1866.36093723 1866.36093723 0 0 0 140.04691723-5.34970492c2.24727335-2.98310674 4.21612437-6.18497483 6.3937923-9.2178004 30.66633723 30.70611158 55.4360664 65.4791928 72.80769147 103.21549355 11.00766384 23.91457269 46.15860503 21.27949489 52.69160879-4.22606768a371.15156223 371.15156223 0 0 0 11.514792-91.99901164c0-69.36717486-19.13165746-133.82216804-51.75690182-187.92578088-3.42062944-5.66790279-4.76302748-12.26056868-3.76865837-18.80351632a462.20625001 462.20625001 0 0 0 5.36959269-69.943909c-0.00994388-166.08943902-87.32547796-311.81420293-218.6915546-394.09823051zM605.93803103 357.87693858a93.93749974 93.93749974 0 1 1-187.89594924 6.1e-7 93.93749974 93.93749974 0 0 1 187.89594924-6.1e-7z" p-id="5405" data-v-44bd5a18></path><path d="M429.50777625 765.63860547C429.50777625 803.39355007 466.44236686 1000.39046097 512.00932183 1000.39046097c45.56695499 0 82.4922232-197.00623328 82.5015456-234.7518555 0-37.75494459-36.9345906-68.35043303-82.4922232-68.34111062-45.57627738-0.00932239-82.52019037 30.59548842-82.51086798 68.34111062z" p-id="5406" data-v-44bd5a18></path></svg></div></div></div>
+    <script src="/assets/js/app.4cde329c.js" defer></script><script src="/assets/js/3.b1890d86.js" defer></script><script src="/assets/js/1.eb3b7f1d.js" defer></script><script src="/assets/js/12.e37f0daa.js" defer></script>
+  </body>
+</html>
